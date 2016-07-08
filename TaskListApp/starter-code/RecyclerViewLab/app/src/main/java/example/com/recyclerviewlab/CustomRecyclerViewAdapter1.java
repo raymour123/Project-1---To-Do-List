@@ -36,7 +36,6 @@ public class CustomRecyclerViewAdapter1 extends RecyclerView.Adapter<CustomViewH
         final CustomObject1 customObject1 = customObjectList1.get(position);
         holder.mTextView1.setText(customObject1.getTaskTitle());
         holder.mView.setBackgroundColor(Color.parseColor(customObject1.getTaskColor()));
-
         holder.mRelativeLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -27,16 +27,16 @@ public class SecondaryActivity extends AppCompatActivity {
         int position = intent.getIntExtra("Some Name", -1);
         // sdlkghalg
         //default value -1 because it is an invalid index... would fail
-        CustomObject1 obj = list.get(position);
+        CustomObject1 object = list.get(position);
 
-        ArrayList<CustomObject2> customObjects2 = obj.items;
-        customObjects2.add(new CustomObject2("Title 1","FF0000"));
-        customObjects2.add(new CustomObject2("Title 2","F0F000"));
-        customObjects2.add(new CustomObject2("Title 3","F00FF0"));
-        customObjects2.add(new CustomObject2("Title 4","FF00F0"));
-        customObjects2.add(new CustomObject2("Title 5","FF000F"));
-        customObjects2.add(new CustomObject2("Title 6","FF0F0F"));
-        customObjects2.add(new CustomObject2("Title 7","FF0000"));
+        ArrayList<CustomObject2> customObjects2 = object.items;
+        customObjects2.add(new CustomObject2("Eat Bagel","FF0000"));
+        customObjects2.add(new CustomObject2("Implement a Singleton","#8a2be2"));
+        customObjects2.add(new CustomObject2("Buy a Pony","F00FF0"));
+        customObjects2.add(new CustomObject2("Item 4","FF00F0"));
+        customObjects2.add(new CustomObject2("Item 5","FF000F"));
+        customObjects2.add(new CustomObject2("Item 6","FF0F0F"));
+        customObjects2.add(new CustomObject2("Item 7","FF0000"));
 
 
         CustomRecyclerViewAdapter2 adapter2 = new CustomRecyclerViewAdapter2(customObjects2);
