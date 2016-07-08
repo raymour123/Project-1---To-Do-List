@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TaskLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView android:id="@+id/colorSquareTask"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="12dp"
+        android:background="@android:color/holo_green_light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/colorSquareTask"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Task Title Text"
+        android:textColor="@android:color/black"
+        android:id="@+id/taskListTitleTV" />
+
+    <Button
+        android:id="@+id/editListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Edit List Title"
+        android:layout_below="@+id/taskListTitleTV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/removeListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Remove List"
+        android:layout_below="@+id/taskListTitleTV"
+        android:layout_toLeftOf="@+id/editListButton"
+        android:layout_toStartOf="@+id/editListButton" />
+
+
+
+
+</RelativeLayout>
