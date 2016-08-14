@@ -25,6 +25,7 @@ public class SecondaryActivity extends AppCompatActivity {
         ArrayList<CustomObject1> list = Singleton.getInstance().mArrayList;
         Intent intent = getIntent();
         int position = intent.getIntExtra("Some Name", -1);
+
         // sdlkghalg
         //default value -1 because it is an invalid index... would fail
         CustomObject1 object = list.get(position);

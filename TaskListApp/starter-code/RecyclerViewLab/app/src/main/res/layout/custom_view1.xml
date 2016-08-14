@@ -40,9 +40,8 @@
         android:text="Remove List"
         android:layout_below="@+id/taskListTitleTV"
         android:layout_toLeftOf="@+id/editListButton"
-        android:layout_toStartOf="@+id/editListButton" />
-
-
+        android:layout_toStartOf="@+id/editListButton"
+        />
 
 
 </RelativeLayout>

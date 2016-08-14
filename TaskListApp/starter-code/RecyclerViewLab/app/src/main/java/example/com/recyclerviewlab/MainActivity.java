@@ -35,13 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<CustomObject1> customObjects1 = Singleton.getInstance().mArrayList;
          customObjects1.add(new CustomObject1("Android Course", "#FF0000"));
-         customObjects1.add(new CustomObject1("Grocery List", "#FFF00F"));
-         customObjects1.add(new CustomObject1("Labs to Finish", "#0d98ba"));
-         customObjects1.add(new CustomObject1("Title 4", "#8a2be2"));
-         customObjects1.add(new CustomObject1("Title 5", "#F0F000"));
-         customObjects1.add(new CustomObject1("Title 6", "#FFF000"));
-         customObjects1.add(new CustomObject1("Title 7", "#FF00F0"));
-
 
         CustomRecyclerViewAdapter1 adapter1 = new CustomRecyclerViewAdapter1(customObjects1);
 
